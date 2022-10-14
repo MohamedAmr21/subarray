@@ -24,17 +24,19 @@ int *findlongestsqu(int *arr,int count_arr)
             }
        }
     }
-    return buff;
-   
+    for(int i=0;i<max-4;i++)
+    {
+        printf("%d",*buff);
+    }
+   return 0;
 }
 
 int main()
 {
     int arr[]={1,5,5,5,9,4,4,4,4};
     int n=sizeof(arr)/sizeof(int);
-    for(int i=0;i<sizeof(findlongestsqu);i++)
-    {
-        findlongestsqu(arr,n);
-    }
+    
+    printf("%d",*findlongestsqu(arr,n));    
+    
     return 0;
 }
